@@ -1,0 +1,83 @@
+@import "common";
+
+.fixed{
+    position: fixed;
+    top: 0;
+    left:0;
+}
+header{
+    z-index: 3;
+    width: 100%;
+    background-color: rgba(247, 247, 247, 0.486);
+    nav{
+        width: 100%;
+        height: $height-header;
+        max-width: $max-width;
+        margin: 0 auto;
+        @extend %flex-center;
+        @extend %logo-style;
+        div.burger{
+            display: none;
+            i{
+                cursor: pointer;
+                @extend %hover-text;
+            }
+        }
+        ul{
+            width: calc(100% - 280px);
+            text-align: right;
+            padding-right: 10px;
+            li{
+                display: inline-block;
+                font-size: $font-size-nav;
+                font-weight: 500;
+                margin: 5px 10px;
+                @extend %hover-text;
+            }
+        }
+        @media all and (max-width: 768px) {
+            div.burger{
+                display: block;
+                width: calc(100% - 280px);
+                text-align: right;
+            }
+            ul{
+                display: none;
+                width: 100%;
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+                // display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                flex-direction: column;
+                padding-right: 10px;
+                background-color: #023d39cc;
+                li{
+                    width: 100%;
+                    display: block;
+                    color: #fff;
+                    padding: 20px;
+                    border-bottom: 1px solid rgba(255, 255, 255, 0.158);
+                }
+            }
+        }
+        div.social-media{
+            // border: 1px solid red;
+            width: 80px;
+            display: flex;
+            @extend %flex-center;
+            div.icon{
+                i{
+                    margin: 0 4px;
+                    opacity: 0.9;
+                    // color: map-get( $color,'main');
+                    font-size: 25px;
+                    @extend %hover-text;
+                }
+            }
+        }
+    }
+}

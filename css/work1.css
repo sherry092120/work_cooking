@@ -1,0 +1,734 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI";
+}
+
+body {
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+a {
+  text-align: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+section#tab3 div.swiper-slide div.img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section#tab1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#tab2 div.work-items, footer div.footer-block, header nav div.social-media, header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav div.social-media div.icon i, header nav ul li, header nav div.burger i {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+header nav div.social-media div.icon i:hover, header nav ul li:hover, header nav div.burger i:hover {
+  color: #03CEA4;
+}
+
+section#tab4 div.bg div.contact-detail button, section#tab3 div.swiper-slide div.decs button, section#top div.top-bg div.right-block div.swiper-slide div.decs button, section#top div.top-bg div.left-block button {
+  transition: all 0.5s;
+  background-color: #088178;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+section#tab4 div.bg div.contact-detail button:hover, section#tab3 div.swiper-slide div.decs button:hover, section#top div.top-bg div.right-block div.swiper-slide div.decs button:hover, section#top div.top-bg div.left-block button:hover {
+  background-color: #03CEA4;
+}
+
+footer div.footer-block div.logo-block, header nav div.logo-block {
+  width: 200px;
+}
+footer div.footer-block div.logo-block div.logo, header nav div.logo-block div.logo {
+  cursor: pointer;
+  margin: 0 10px;
+  text-align: center;
+  line-height: 40px;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Segoe UI", Tahoma;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgba(17, 17, 17, 0.842);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI";
+}
+
+body {
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+a {
+  text-align: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+section#tab3 div.swiper-slide div.img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section#tab1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#tab2 div.work-items, footer div.footer-block, header nav div.social-media, header nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav div.social-media div.icon i, header nav ul li, header nav div.burger i {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+header nav div.social-media div.icon i:hover, header nav ul li:hover, header nav div.burger i:hover {
+  color: #03CEA4;
+}
+
+section#tab4 div.bg div.contact-detail button, section#tab3 div.swiper-slide div.decs button, section#top div.top-bg div.right-block div.swiper-slide div.decs button, section#top div.top-bg div.left-block button {
+  transition: all 0.5s;
+  background-color: #088178;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+section#tab4 div.bg div.contact-detail button:hover, section#tab3 div.swiper-slide div.decs button:hover, section#top div.top-bg div.right-block div.swiper-slide div.decs button:hover, section#top div.top-bg div.left-block button:hover {
+  background-color: #03CEA4;
+}
+
+footer div.footer-block div.logo-block, header nav div.logo-block {
+  width: 200px;
+}
+footer div.footer-block div.logo-block div.logo, header nav div.logo-block div.logo {
+  cursor: pointer;
+  margin: 0 10px;
+  text-align: center;
+  line-height: 40px;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Segoe UI", Tahoma;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgba(17, 17, 17, 0.842);
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+header {
+  z-index: 3;
+  width: 100%;
+  background-color: rgba(247, 247, 247, 0.486);
+}
+header nav {
+  width: 100%;
+  height: 80px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+header nav div.burger {
+  display: none;
+}
+header nav div.burger i {
+  cursor: pointer;
+}
+header nav ul {
+  width: calc(100% - 280px);
+  text-align: right;
+  padding-right: 10px;
+}
+header nav ul li {
+  display: inline-block;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px 10px;
+}
+@media all and (max-width: 768px) {
+  header nav div.burger {
+    display: block;
+    width: calc(100% - 280px);
+    text-align: right;
+  }
+  header nav ul {
+    display: none;
+    width: 100%;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding-right: 10px;
+    background-color: #023d39cc;
+  }
+  header nav ul li {
+    width: 100%;
+    display: block;
+    color: #fff;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.158);
+  }
+}
+header nav div.social-media {
+  width: 80px;
+  display: flex;
+}
+header nav div.social-media div.icon i {
+  margin: 0 4px;
+  opacity: 0.9;
+  font-size: 25px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI";
+}
+
+body {
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+a {
+  text-align: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
+section#tab3 div.swiper-slide div.img img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section#tab1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section#tab2 div.work-items, footer div.footer-block, header nav, header nav div.social-media {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav div.burger i, header nav ul li, header nav div.social-media div.icon i {
+  transition: all 0.5s;
+  cursor: pointer;
+}
+header nav div.burger i:hover, header nav ul li:hover, header nav div.social-media div.icon i:hover {
+  color: #03CEA4;
+}
+
+section#tab4 div.bg div.contact-detail button, section#tab3 div.swiper-slide div.decs button, section#top div.top-bg div.right-block div.swiper-slide div.decs button, section#top div.top-bg div.left-block button {
+  transition: all 0.5s;
+  background-color: #088178;
+  border: none;
+  outline: none;
+  color: #fff;
+  padding: 10px 50px;
+  font-size: 16px;
+  cursor: pointer;
+}
+section#tab4 div.bg div.contact-detail button:hover, section#tab3 div.swiper-slide div.decs button:hover, section#top div.top-bg div.right-block div.swiper-slide div.decs button:hover, section#top div.top-bg div.left-block button:hover {
+  background-color: #03CEA4;
+}
+
+footer div.footer-block div.logo-block, header nav div.logo-block {
+  width: 200px;
+}
+footer div.footer-block div.logo-block div.logo, header nav div.logo-block div.logo {
+  cursor: pointer;
+  margin: 0 10px;
+  text-align: center;
+  line-height: 40px;
+  width: 100px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: 800;
+  font-family: "Segoe UI", Tahoma;
+  border-radius: 5px;
+  color: #fff;
+  background-color: rgba(17, 17, 17, 0.842);
+}
+
+footer {
+  width: 100%;
+  background-color: #eef1ef;
+}
+footer div.footer-block {
+  width: 100%;
+  padding: 30px 20px 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+footer div.footer-block div.logo-block {
+  width: 100px;
+}
+footer div.footer-block div.logo-block div.logo {
+  margin: 0;
+  background-color: #111;
+}
+footer div.footer-block div.contact {
+  width: 100%;
+  text-align: center;
+}
+footer div.footer-block div.contact p {
+  margin: 10px 0 0 0;
+}
+footer div.footer-block div.social-media {
+  width: 100%;
+  text-align: center;
+  margin: 10px 0 20px 0;
+}
+footer div.footer-block div.social-media div.icon {
+  display: inline-block;
+}
+footer div.footer-block div.social-media div.icon i {
+  font-size: 30px;
+  cursor: pointer;
+}
+footer div.footer-block div.copyright, footer div.footer-block div.note {
+  width: 100%;
+  text-align: center;
+}
+footer div.footer-block div.note {
+  color: red;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.section-block {
+  width: 100%;
+}
+.section-block section {
+  margin: 0 auto;
+  padding-top: 120px;
+  width: 100%;
+  max-width: 1200px;
+}
+.section-block section h1.title {
+  font-size: 22px;
+  text-align: center;
+  color: #0d4b47;
+}
+
+section#top {
+  position: relative;
+  height: 500px;
+  background-image: url(../images/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section#top div.top-bg {
+  position: absolute;
+  left: 20%;
+  bottom: 0;
+  width: 80%;
+  height: 85%;
+  background-color: rgba(231, 231, 231, 0.726);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-content: flex-end;
+}
+section#top div.top-bg div.left-block {
+  z-index: 2;
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  width: 270px;
+}
+section#top div.top-bg div.left-block h1 {
+  font-size: 28px;
+}
+section#top div.top-bg div.right-block {
+  width: 400px;
+  height: 80%;
+  position: relative;
+  bottom: 5px;
+}
+section#top div.top-bg div.right-block div.swiper-slide {
+  background-color: #3b3b3b;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+section#top div.top-bg div.right-block div.swiper-slide div.img {
+  width: 100%;
+  height: 60%;
+}
+section#top div.top-bg div.right-block div.swiper-slide div.decs {
+  width: 100%;
+  padding: 5px 20px;
+}
+section#top div.top-bg div.right-block div.swiper-slide div.decs h2 {
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+  text-align: left;
+  letter-spacing: 1px;
+}
+section#top div.top-bg div.right-block div.swiper-slide div.decs p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 14px;
+  padding: 1px 0;
+  text-align: left;
+  margin: 0;
+  font-weight: 100;
+}
+section#top div.top-bg div.right-block div.swiper-slide div.decs button {
+  width: 100%;
+  background-color: rgba(17, 17, 17, 0.363);
+  border-radius: 3px;
+  border: 1px solid #03CEA4;
+  margin-top: 8px;
+  padding: 6px 0;
+}
+@media all and (max-width: 900px) {
+  section#top div.top-bg div.left-block {
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  section#top div.top-bg div.right-block {
+    display: none;
+  }
+}
+@media all and (max-width: 900px) {
+  section#top div.top-bg {
+    left: 0;
+    bottom: 50%;
+    transform: translateY(80%);
+    width: 100%;
+    height: 50%;
+  }
+}
+
+section#tab1 {
+  padding-left: 50px;
+  padding-right: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+section#tab1 div.about-image {
+  width: 300px;
+}
+section#tab1 div.about-text {
+  width: calc(100% - 300px);
+  padding: 10px 50px;
+}
+section#tab1 div.about-text p.content {
+  margin: 0 auto;
+  line-height: 30px;
+  font-size: 14px;
+  color: #088178;
+  font-weight: 600;
+  position: relative;
+}
+@media all and (min-width: 576px) and (max-width: 767px) {
+  section#tab1 div.about-image {
+    opacity: 0.7;
+  }
+  section#tab1 div.about-text {
+    width: 400px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(230, 230, 230, 0.534);
+  }
+  section#tab1 div.about-text h1 {
+    margin: 0px;
+  }
+}
+@media all and (max-width: 575px) {
+  section#tab1 div.about-image {
+    opacity: 0.7;
+    width: 100%;
+  }
+  section#tab1 div.about-text {
+    width: 100%;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(230, 230, 230, 0.534);
+  }
+  section#tab1 div.about-text h1 {
+    margin: 0px;
+  }
+}
+
+@media all and (max-width: 575px) {
+  section#tab1 {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+section#tab2 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+section#tab2 div.work-items p {
+  margin: 0;
+  padding: 50px 0;
+  text-align: center;
+}
+section#tab2 div.work-items div.item {
+  line-height: 94px;
+  padding: 0 30px;
+  margin: 0 15px 20px 15px;
+  text-align: center;
+  height: 100px;
+  border: 3px solid #088178;
+  position: relative;
+}
+section#tab2 div.work-items div.item::after {
+  content: ">>";
+  position: absolute;
+  right: -30px;
+}
+section#tab2 div.work-items div.item:last-child::after {
+  content: " ";
+}
+
+section#tab3 {
+  padding-left: 30px;
+  padding-right: 20px;
+}
+section#tab3 div.swiper-slide {
+  background-color: #3b3b3b;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+section#tab3 div.swiper-slide div.img {
+  width: 100%;
+  height: 200px;
+  position: relative;
+}
+section#tab3 div.swiper-slide div.decs {
+  width: 100%;
+  padding: 5px 20px 20px 20px;
+}
+section#tab3 div.swiper-slide div.decs h2 {
+  color: #fff;
+  font-size: 16px;
+  margin: 0;
+  text-align: left;
+  letter-spacing: 1px;
+}
+section#tab3 div.swiper-slide div.decs p {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 14px;
+  padding: 1px 0;
+  text-align: left;
+  margin: 0;
+  font-weight: 100;
+}
+section#tab3 div.swiper-slide div.decs button {
+  width: 100%;
+  background-color: rgba(17, 17, 17, 0.363);
+  border-radius: 3px;
+  border: 1px solid #03CEA4;
+  margin-top: 8px;
+  padding: 6px 0;
+}
+
+section#tab4 {
+  background-color: #088178;
+  margin-top: 120px;
+  padding: 10px;
+  text-align: center;
+  max-width: none;
+}
+section#tab4 div.bg {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section#tab4 div.bg h1 {
+  color: #fff;
+}
+section#tab4 div.bg div.desc {
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+}
+section#tab4 div.bg div.social-media div.icon {
+  margin: 30px 0;
+  display: inline-block;
+  vertical-align: middle;
+}
+section#tab4 div.bg div.social-media div.icon i {
+  color: #fff;
+  font-size: 40px;
+  display: inline-block;
+  margin: 0 15px;
+  cursor: pointer;
+}
+section#tab4 div.bg div.social-media div.icon i.fa-envelope-open {
+  font-size: 35px;
+}
+section#tab4 div.bg div.contact-detail {
+  width: 50%;
+  margin: 0 auto;
+  color: #fff;
+}
+section#tab4 div.bg div.contact-detail p {
+  margin: 0;
+}
+section#tab4 div.bg div.contact-detail button {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  font-weight: 700;
+  color: #fff;
+  background-color: #088178;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  font-size: 18px;
+}
+
+section#top .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+section#top .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+section#top .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+section#top .swiper-slide {
+  width: 70%;
+}
+
+section#tab3 .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+section#tab3 .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+section#tab3 .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}/*# sourceMappingURL=work1.css.map */
