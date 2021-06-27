@@ -386,11 +386,6 @@ footer div.footer-block div.note {
   text-align: center;
   color: #0d4b47;
 }
-@media all and (max-width: 575px) {
-  .section-block section {
-    padding-bottom: 100px;
-  }
-}
 
 section#top {
   position: relative;
@@ -486,6 +481,12 @@ section#top div.top-bg div.right-block div.swiper-slide div.decs button {
   }
 }
 
+@media all and (max-width: 575px) {
+  section#top {
+    height: 100vh;
+    background-position: center left -200px;
+  }
+}
 section#tab1 {
   padding-left: 50px;
   padding-right: 50px;
@@ -576,6 +577,9 @@ section#tab2 div.work-items div.item:last-child::after {
   content: " ";
 }
 @media all and (max-width: 767px) {
+  section#tab2 div.work-items p {
+    padding: 0 0 20px 0;
+  }
   section#tab2 div.work-items div.item {
     width: 250px;
     padding: 0;

@@ -15,11 +15,6 @@
             color: map-get( $color,'text');
         }
     }
-    @media all and (max-width: 575px) {
-        section{
-            padding-bottom: 100px;
-        }
-    }
 }
 section#top{
     position: relative;
@@ -119,6 +114,12 @@ section#top{
         }
     }
 }
+@media all and (max-width: 575px) {
+    section#top{
+        height: 100vh;
+        background-position: center left -200px;
+    }
+}
 section#tab1{
     @extend %flex;
     padding-left: 50px;
@@ -210,6 +211,9 @@ section#tab2{
             }
         }
         @media all and (max-width:767px) {
+            p{
+                padding: 0 0 20px 0;
+            }
             div.item{
                 width: 250px;
                 padding: 0;
