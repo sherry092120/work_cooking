@@ -578,6 +578,7 @@ section#tab2 div.work-items div.item:last-child::after {
 @media all and (max-width: 767px) {
   section#tab2 div.work-items div.item {
     width: 250px;
+    padding: 0;
   }
 }
 
