@@ -348,6 +348,7 @@ footer div.footer-block div.contact {
 }
 footer div.footer-block div.contact p {
   margin: 10px 0 0 0;
+  font-size: 13px;
 }
 footer div.footer-block div.social-media {
   width: 100%;
@@ -364,6 +365,7 @@ footer div.footer-block div.social-media div.icon i {
 footer div.footer-block div.copyright, footer div.footer-block div.note {
   width: 100%;
   text-align: center;
+  font-size: 13px;
 }
 footer div.footer-block div.note {
   color: red;
@@ -485,7 +487,7 @@ section#top div.top-bg div.right-block div.swiper-slide div.decs button {
 @media all and (max-width: 575px) {
   section#top {
     height: 100vh;
-    background-position: center left -200px;
+    background-position: center left -550px;
   }
 }
 section#tab1 {
@@ -655,6 +657,8 @@ section#tab4 div.bg div.desc {
   width: 50%;
   margin: 0 auto;
   color: #fff;
+  font-size: 14px;
+  letter-spacing: 1px;
 }
 @media all and (max-width: 575px) {
   section#tab4 div.bg div.desc {
@@ -680,14 +684,17 @@ section#tab4 div.bg div.contact-detail {
   width: 50%;
   margin: 0 auto;
   color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 section#tab4 div.bg div.contact-detail p {
-  margin: 0;
+  margin: 20px 0 0 0;
+  font-size: 12px;
 }
 section#tab4 div.bg div.contact-detail button {
   border: 1px solid #fff;
   border-radius: 5px;
-  margin: 20px 0;
+  margin: 20px 0 0 0;
 }
 @media all and (max-width: 575px) {
   section#tab4 div.bg div.contact-detail {

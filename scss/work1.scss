@@ -118,7 +118,7 @@ section#top{
 @media all and (max-width: 575px) {
     section#top{
         height: 100vh;
-        background-position: center left -200px;
+        background-position: center left -550px;
     }
 }
 section#tab1{
@@ -291,6 +291,8 @@ section#tab4{
             width: 50%;
             margin: 0 auto;
             color: #fff;
+            font-size: 14px;
+            letter-spacing: 1px;
         }
         @media all and (max-width:575px) {
             div.desc{
@@ -318,14 +320,17 @@ section#tab4{
             width: 50%;
             margin: 0 auto;
             color: #fff;
+            font-weight: bold;
+            letter-spacing: 1px;
             p{
-                margin: 0;
+                margin: 20px 0 0 0;
+                font-size: 12px;
             }
             button{
                 @extend %btn-style;
                 border: 1px solid #fff;
                 border-radius: 5px;
-                margin: 20px 0;
+                margin: 20px 0 0 0;
             }
         }
         @media all and (max-width:575px) {
