@@ -556,7 +556,7 @@ section#tab2 {
 section#tab2 div.work-items p {
   margin: 0;
   padding: 50px 0;
-  text-align: justify;
+  text-align: center;
 }
 section#tab2 div.work-items div.item {
   line-height: 94px;
