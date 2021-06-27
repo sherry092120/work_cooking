@@ -331,7 +331,7 @@ footer {
 }
 footer div.footer-block {
   width: 100%;
-  padding: 30px 20px 0 20px;
+  padding: 40px 20px 0 30px;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -385,6 +385,11 @@ footer div.footer-block div.note {
   font-size: 22px;
   text-align: center;
   color: #0d4b47;
+}
+@media all and (max-width: 575px) {
+  .section-block section {
+    padding-bottom: 100px;
+  }
 }
 
 section#top {
@@ -501,6 +506,7 @@ section#tab1 div.about-text p.content {
   color: #088178;
   font-weight: 600;
   position: relative;
+  text-align: justify;
 }
 @media all and (min-width: 576px) and (max-width: 767px) {
   section#tab1 div.about-image {
@@ -550,7 +556,7 @@ section#tab2 {
 section#tab2 div.work-items p {
   margin: 0;
   padding: 50px 0;
-  text-align: center;
+  text-align: justify;
 }
 section#tab2 div.work-items div.item {
   line-height: 94px;
@@ -568,6 +574,11 @@ section#tab2 div.work-items div.item::after {
 }
 section#tab2 div.work-items div.item:last-child::after {
   content: " ";
+}
+@media all and (max-width: 767px) {
+  section#tab2 div.work-items div.item {
+    width: 250px;
+  }
 }
 
 section#tab3 {
@@ -634,6 +645,11 @@ section#tab4 div.bg div.desc {
   margin: 0 auto;
   color: #fff;
 }
+@media all and (max-width: 575px) {
+  section#tab4 div.bg div.desc {
+    width: 95%;
+  }
+}
 section#tab4 div.bg div.social-media div.icon {
   margin: 30px 0;
   display: inline-block;
@@ -661,6 +677,11 @@ section#tab4 div.bg div.contact-detail button {
   border: 1px solid #fff;
   border-radius: 5px;
   margin: 20px 0;
+}
+@media all and (max-width: 575px) {
+  section#tab4 div.bg div.contact-detail {
+    width: 90%;
+  }
 }
 
 .swiper-button-next, .swiper-button-prev {
