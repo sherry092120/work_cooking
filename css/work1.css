@@ -603,7 +603,7 @@ section#tab3 div.swiper-slide div.img {
 }
 section#tab3 div.swiper-slide div.decs {
   width: 100%;
-  padding: 5px 20px 20px 20px;
+  padding: 10px 20px 20px 20px;
 }
 section#tab3 div.swiper-slide div.decs h2 {
   color: #fff;
@@ -628,6 +628,11 @@ section#tab3 div.swiper-slide div.decs button {
   border: 1px solid #03CEA4;
   margin-top: 8px;
   padding: 6px 0;
+}
+@media all and (max-width: 575px) {
+  section#tab3 div.swiper-slide div.decs {
+    padding: 20px;
+  }
 }
 
 section#tab4 {

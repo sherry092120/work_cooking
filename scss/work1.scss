@@ -239,7 +239,7 @@ section#tab3{
         }
         div.decs{
             width: 100%;
-            padding: 5px 20px 20px 20px;
+            padding: 10px 20px 20px 20px;
             h2{
                 color: #fff;
                 font-size: $font-size-sub;
@@ -264,6 +264,11 @@ section#tab3{
                 border: 1px solid map-get($color,'main2');
                 margin-top: 8px;
                 padding: 6px 0;
+            }
+        }
+        @media all and (max-width:575px) {
+            div.decs{
+                padding: 20px;
             }
         }
     }
