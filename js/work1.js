@@ -26,12 +26,12 @@ $(document).ready(function(){
         $('html,body').css('overflow','auto');
     })
     // 輪播套件
-    var swiper1 = new Swiper(".mySwiper", {
+    var swiper1 = new Swiper(".mySwiper1", {
         slidesPerView: "auto",
         spaceBetween: 30,
         navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
+            nextEl: ".mySwiper1 .swiper-button-next",
+            prevEl: ".mySwiper1 .swiper-button-prev",
         },
     });
     function carousel(){
@@ -41,42 +41,38 @@ $(document).ready(function(){
                 spaceBetween: 30,
                 slidesPerGroup: 1,
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    nextEl: ".mySwiper2 .swiper-button-next",
+                    prevEl: ".mySwiper2 .swiper-button-prev",
                 },
             });
-            $('#mySwiper2').css('width','80%');
         }else if($(window).width() < 768 && $(window).width() >= 576){
-            $('#mySwiper2').css('width','100%');
             var swiper2 = new Swiper(".mySwiper2", {
                 slidesPerView: 2,
                 spaceBetween: 30,
                 slidesPerGroup: 1,
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    nextEl: ".mySwiper2 .swiper-button-next",
+                    prevEl: ".mySwiper2 .swiper-button-prev",
                 },
             });
         }else if($(window).width() < 992 && $(window).width() >= 768){
-            $('#mySwiper2').css('width','100%');
             var swiper2 = new Swiper(".mySwiper2", {
                 slidesPerView: 3,
                 spaceBetween: 30,
                 slidesPerGroup: 1,
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    nextEl: ".mySwiper2 .swiper-button-next",
+                    prevEl: ".mySwiper2 .swiper-button-prev",
                 },
             });
         }else{
-            $('#mySwiper2').css('width','100%');
             var swiper2 = new Swiper(".mySwiper2", {
                 slidesPerView: 4,
                 spaceBetween: 30,
                 slidesPerGroup: 1,
                 navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
+                    nextEl: ".mySwiper2 .swiper-button-next",
+                    prevEl: ".mySwiper2 .swiper-button-prev",
                 },
             });
         }

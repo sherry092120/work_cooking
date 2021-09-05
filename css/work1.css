@@ -424,6 +424,7 @@ section#top div.top-bg div.right-block {
   height: 80%;
   position: relative;
   bottom: 5px;
+  overflow: hidden;
 }
 section#top div.top-bg div.right-block div.swiper-slide {
   background-color: #3b3b3b;
@@ -711,9 +712,13 @@ section#tab4 div.bg div.contact-detail button {
   font-size: 18px;
 }
 
+section#top {
+  overflow: hidden;
+}
 section#top .swiper-container {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 section#top .swiper-slide {
   text-align: center;
@@ -743,9 +748,13 @@ section#top .swiper-slide {
   width: 70%;
 }
 
+section#tab3 {
+  overflow: hidden;
+}
 section#tab3 .swiper-container {
   width: 100%;
   height: 100%;
+  position: relative;
 }
 section#tab3 .swiper-slide {
   text-align: center;
@@ -762,8 +771,8 @@ section#tab3 .swiper-slide {
   justify-content: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
+  -webkit-align-items: stretch;
+  align-items: stretch;
 }
 section#tab3 .swiper-slide img {
   display: block;
